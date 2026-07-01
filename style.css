@@ -1,4 +1,79 @@
-body{font-family:Arial;background:#f7f3ef;display:flex;justify-content:center;padding:40px}
-.card{max-width:420px;width:100%;background:#fff;padding:20px;border-radius:16px;box-shadow:0 6px 20px #0002}
-input{width:100%;padding:12px} .item{padding:10px;border:1px solid #ddd;margin:6px 0;cursor:pointer}
-#mesa{margin-top:20px;font-size:24px;font-weight:bold;color:#c46a4a}
+:root{
+--terracota:#c46a4a;
+--terracotaSoft:#e6b8a2;
+--arena:#f7f3ef;
+--texto:#3a2f2a;
+--dorado:#d6b36a;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+h4{
+font-family:'Great Vibes', cursive;
+font-size:5rem;
+color:var(--terracota);
+font-weight:400;
+}
+
+body {
+background:var(--arena);
+color:var(--texto);
+font-family:'Poppins',sans-serif;
+overflow-x:hidden;
+text-align: center; 
+padding: 100px;  
+display:flex;
+}
+
+input,select{
+padding:14px;
+border-radius:12px;
+border:1px solid #ddd;
+font-size:1rem;
+font-family:'Poppins',sans-serif;
+}
+
+button{
+margin-top:30px;
+padding:16px 40px;
+border:none;
+border-radius:40px;
+background:var(--terracota);
+color:white;
+font-size:1rem;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 15px 35px rgba(0,0,0,.3);
+font-family:'Poppins',sans-serif;
+}
+
+button:hover{
+transform:translateY(-3px);
+background:#aa593f;
+box-shadow:0 0 18px rgba(214,179,106,.45);
+}
+
+#resultado { 
+margin-top: 20px; 
+font-size: 1.2em; 
+color: #333; 
+}
+
+.divider{
+width:90px;
+height:2px;
+background:linear-gradient(to right,var(--terracota),var(--dorado));
+margin:25px auto;
+border-radius:10px;
+}
+
+#mesa{
+margin-top:20px;
+font-size:24px;
+font-weight:bold;
+color:#c46a4a
+}
