@@ -1,0 +1,4 @@
+body{font-family:Arial;background:#f7f3ef;display:flex;justify-content:center;padding:40px}
+.card{max-width:420px;width:100%;background:#fff;padding:20px;border-radius:16px;box-shadow:0 6px 20px #0002}
+input{width:100%;padding:12px} .item{padding:10px;border:1px solid #ddd;margin:6px 0;cursor:pointer}
+#mesa{margin-top:20px;font-size:24px;font-weight:bold;color:#c46a4a}
