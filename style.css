@@ -19,14 +19,14 @@ color:var(--terracota);
 font-weight:400;
 }
 
-body {
-background:var(--arena);
-color:var(--texto);
-font-family:'Poppins',sans-serif;
-overflow-x:hidden;
-text-align: center; 
-padding: 100px;  
-display:flex;
+body{
+    background:var(--arena);
+    color:var(--texto);
+    font-family:'Poppins',sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
 }
 
 input,select{
