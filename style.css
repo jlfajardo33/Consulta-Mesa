@@ -72,7 +72,3 @@ background:linear-gradient(to right,var(--terracota),var(--dorado));
 margin:25px auto;
 border-radius:10px;
 }
-
-.card{max-width:420px;width:100%;background:#fff;padding:20px;border-radius:16px;box-shadow:0 6px 20px #0002}
-
-#mesa{margin-top:20px;font-size:24px;font-weight:bold;color:#c46a4a}
