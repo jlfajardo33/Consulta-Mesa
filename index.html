@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Consulta de Mesa</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+<title>Encuentra tu Mesa | José & Daniela</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-<h4>Consulta tu Mesa</h4>
-<input id="buscar" placeholder="Escribe tu nombre"><br>
-<div class="divider"></div>
-<div id="resultado"></div>
-<div id="mesa"></div>
+
+<div class="background"></div>
+
+<div class="card">
+
+    <h1>José & Daniela</h1>
+
+    <div class="divider"></div>
+
+    <h2>Encuentra tu mesa</h2>
+
+    <p class="texto">
+        Escribe tu nombre o apellido para conocer el número de tu mesa.
+    </p>
+
+    <input
+        type="text"
+        id="buscar"
+        placeholder="Empieza a escribir..."
+        autocomplete="off">
+
+    <div id="resultados"></div>
+
+    <div id="mesa"></div>
+
+</div>
+
 <script src="app.js"></script>
+
 </body>
+
 </html>
