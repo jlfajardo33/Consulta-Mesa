@@ -306,3 +306,91 @@ button {
         transform: scale(1);
     }
 }
+
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    padding:20px;
+    animation:fadeIn .3s;
+}
+
+.modal-contenido{
+    background:white;
+    width:100%;
+    max-width:420px;
+    border-radius:25px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+    animation:zoomIn .3s ease;
+}
+
+.modal-contenido h3{
+    font-family:'Great Vibes',cursive;
+    color:var(--terracota);
+    font-size:3rem;
+    font-weight:400;
+}
+
+.modal-contenido .nombre{
+    font-size:1.3rem;
+    font-weight:600;
+    margin-top:20px;
+}
+
+.modal-contenido .tituloMesa{
+    margin-top:25px;
+    color:var(--gris);
+    font-size:1rem;
+}
+
+.modal-contenido .numeroMesa{
+    font-size:5rem;
+    color:var(--terracota);
+    font-weight:bold;
+    margin:20px 0;
+}
+
+.modal-contenido .gracias{
+    color:var(--gris);
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+.modal-contenido button{
+    background:var(--terracota);
+    color:white;
+    border:none;
+    padding:14px 25px;
+    border-radius:14px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.modal-contenido button:hover{
+    background:var(--terracotaHover);
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes zoomIn{
+    from{
+        opacity:0;
+        transform:scale(.9);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
