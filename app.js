@@ -89,41 +89,41 @@ function buscar() {
 
 }
 
-function mostrarMesa(invitado) {
+function mostrarMesa(invitado){
 
-    resultados.innerHTML = "";
+    const modal = document.getElementById("modalMesa");
+    const contenido = document.getElementById("contenidoModal");
 
-    mesa.innerHTML = `
+    contenido.innerHTML = `
+        <h3>José & Daniela</h3>
 
-        <div class="tarjeta">
+        <p class="nombre">
+            ${invitado.Invitados}
+        </p>
 
-            <h3>José & Daniela</h3>
+        <p class="tituloMesa">
+            Tu mesa es
+        </p>
 
-            <p class="nombre">
-                ${invitado.Invitados}
-            </p>
-
-            <p class="tituloMesa">
-                Tu mesa es
-            </p>
-
-            <div class="numeroMesa">
-                ${invitado.Mesa}
-            </div>
-
-            <p class="gracias">
-                Gracias por acompañarnos
-                en este día tan especial.
-            </p>
-
-            <button onclick="nuevaBusqueda()">
-                Buscar otro invitado
-            </button>
-
+        <div class="numeroMesa">
+            ${invitado.Mesa}
         </div>
 
+        <p class="gracias">
+            Gracias por acompañarnos
+            en este día tan especial.
+        </p>
+
+        <button onclick="cerrarModal()">
+            Cerrar
+        </button>
     `;
 
+    modal.style.display = "flex";
+
+    setTimeout(() => {
+        cerrarModal();
+        }, 8000);
 }
 
 function nuevaBusqueda() {
@@ -137,3 +137,13 @@ function nuevaBusqueda() {
     buscador.focus();
 
 }
+
+function cerrarModal(){
+
+    document.getElementById("modalMesa").style.display = "none";
+
+    buscador.value = "";
+    resultados.innerHTML = "";
+    buscador.focus();
+}
+
