@@ -168,3 +168,33 @@ function abrirDistribucion(){
     modal.style.display = "flex";
 }
 
+function abrirCronograma(){
+
+    const modal = document.getElementById("modalMesa");
+    const contenido = document.getElementById("contenidoModal");
+
+    contenido.innerHTML = `
+        <h3>Cronograma</h3>
+
+        <div class="cronograma">
+
+            <p>💒 4:00 PM - Ceremonia</p>
+
+            <p>🍽️ 5:30 PM - Cena</p>
+
+            <p>🥂 6:30 PM - Brindis</p>
+
+            <p>🎂 7:00 PM - Pastel</p>
+
+            <p>💃 8:00 PM - Baile</p>
+
+        </div>
+
+        <button onclick="cerrarModal()">
+            Regresar
+        </button>
+    `;
+
+    modal.style.display = "flex";
+}
+
