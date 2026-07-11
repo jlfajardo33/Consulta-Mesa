@@ -147,3 +147,24 @@ function cerrarModal(){
     buscador.focus();
 }
 
+function abrirDistribucion(){
+
+    const modal = document.getElementById("modalMesa");
+    const contenido = document.getElementById("contenidoModal");
+
+    contenido.innerHTML = `
+        <h3>Distribución de Mesas</h3>
+
+        <img
+            src="img/distribucion.png"
+            class="imagen-modal"
+            alt="Distribución de mesas">
+
+        <button onclick="cerrarModal()">
+            Regresar
+        </button>
+    `;
+
+    modal.style.display = "flex";
+}
+
