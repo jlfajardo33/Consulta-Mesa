@@ -394,3 +394,26 @@ button {
         transform:scale(1);
     }
 }
+
+.acciones{
+    margin-top:25px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.acciones button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    background:var(--terracota);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.acciones button:hover{
+    background:var(--terracotaHover);
+}
